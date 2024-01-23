@@ -6,7 +6,13 @@ const Meme = () => {
 		bottomText: '',
 		randomImage: 'http://i.imgflip.com/1bij.jpg',
 	})
-	const [allMemes, setAllMemes] = useState<any[]>([])
+
+	interface allMemes {
+		url: string
+	}
+
+	const [allMemes, setAllMemes] = useState<allMemes[]>([])
+	console.log(allMemes)
 
 	//https://api.imgflip.com/get_memes
 	//data.data.memes
