@@ -7,7 +7,7 @@ const Meme = () => {
 		randomImage: 'http://i.imgflip.com/1bij.jpg',
 	})
 
-	interface allMemes {
+	type allMemes = {
 		url: string
 	}
 
