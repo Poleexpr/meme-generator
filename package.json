@@ -31,7 +31,6 @@
     "prettier": "^3.2.4",
     "prettier-eslint": "^16.3.0",
     "prettier-eslint-cli": "^8.0.1",
-    "prettier-stylelint": "^0.4.2",
     "stylelint": "^16.2.0",
     "stylelint-config-standard": "^36.0.0",
     "typescript": "^5.2.2",
