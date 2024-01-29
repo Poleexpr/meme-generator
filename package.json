@@ -22,6 +22,7 @@
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "prettier": "^3.2.4",
     "prettier-eslint": "^16.3.0",
     "prettier-eslint-cli": "^8.0.1",
     "prettier-stylelint": "^0.4.2",
