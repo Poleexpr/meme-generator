@@ -30,7 +30,7 @@ const Meme = () => {
     const randomNumber = Math.floor(Math.random() * allMemes.length)
     const url = allMemes[randomNumber].url
 
-    setMeme(prevMeme => ({
+    setMeme((prevMeme) => ({
       ...prevMeme,
       randomImage: url,
     }))
@@ -38,7 +38,7 @@ const Meme = () => {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target
-    setMeme(prevMeme => ({
+    setMeme((prevMeme) => ({
       ...prevMeme,
       [name]: value,
     }))
@@ -46,31 +46,31 @@ const Meme = () => {
 
   return (
     <main>
-      <div className="form">
+      <div className='form'>
         <input
-          type="text"
-          placeholder="Top text"
-          className="form_input"
-          name="topText"
+          type='text'
+          placeholder='Top text'
+          className='form_input'
+          name='topText'
           value={meme.topText}
           onChange={handleChange}
         />
         <input
-          type="text"
-          placeholder="Bottom text"
-          className="form_input"
-          name="bottomText"
+          type='text'
+          placeholder='Bottom text'
+          className='form_input'
+          name='bottomText'
           value={meme.bottomText}
           onChange={handleChange}
         />
-        <button className="form_button" onClick={getMemeImage}>
+        <button className='form_button' onClick={getMemeImage}>
           Get a new meme image 🥶
         </button>
       </div>
-      <div className="meme">
-        <img src={meme.randomImage} className="meme_image" />
-        <h2 className="meme_text top">{meme.topText}</h2>
-        <h2 className="meme_text bottom">{meme.bottomText}</h2>
+      <div className='meme'>
+        <img src={meme.randomImage} className='meme_image' />
+        <h2 className='meme_text top'>{meme.topText}</h2>
+        <h2 className='meme_text bottom'>{meme.bottomText}</h2>
       </div>
     </main>
   )
