@@ -1,14 +1,11 @@
-import './App.css'
-import Header from './components/Header'
-import Meme from './components/Meme'
+import { Description, Header, Meme } from './components'
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <Meme />
-    </div>
-  )
-}
+const App = () => (
+  <main className='nes-ui-container nes-ui-with-title'>
+    <Header />
+    <Description />
+    <Meme />
+  </main>
+)
 
 export default App

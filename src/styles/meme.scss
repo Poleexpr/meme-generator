@@ -1,0 +1,73 @@
+.form {
+  .form__wrapper {
+    padding: 36px 0;
+  }
+
+  .form__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 200px;
+    gap: 10px;
+    margin-bottom: 17px;
+  }
+}
+
+.meme {
+  .meme__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .meme__image {
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  .meme__text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+  }
+
+  .meme__text-bottom {
+    bottom: 0;
+  }
+
+  .meme__text-top {
+    top: 0;
+  }
+}
+
+.generator {
+  .generator__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .generator__wrapper {
+    margin-top: 36px;
+  }
+}
+
+@media (width <= 768px) {
+  .form {
+    .form__wrapper {
+      padding-top: 0;
+    }
+
+    .form__container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .meme {
+    .meme__image {
+      max-width: 250px;
+      max-height: 250px;
+    }
+  }
+}
