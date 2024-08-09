@@ -1,5 +1,6 @@
 {
   "name": "memegenerator",
+  "homepage": "https://poleexpr.github.io/memeGenerator",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +10,9 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(tsx|ts|json)\"",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -46,6 +49,7 @@
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
     "husky": "^9.1.4",
     "lint-staged": "^15.2.8",
     "prettier": "^3.2.4",
