@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="http://www.deploy.com"><img src="/public/meme-generator.svg" alt="Demo" width="200"></a>
+  <a href="https://meme-generrrator.netlify.app"><img src="/public/meme-generator.svg" alt="Demo" width="200"></a>
   <br>
   Meme Generator
   <br>
