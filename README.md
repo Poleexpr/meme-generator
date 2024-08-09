@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="http://www.deploy.com"><img src="/meme-generator.svg" alt="Demo" width="200"></a>
+  <a href="http://www.deploy.com"><img src="/public/meme-generator.svg" alt="Demo" width="200"></a>
   <br>
   Meme Generator
   <br>
@@ -31,10 +31,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
-
-# Go into the repository
-$ cd electron-markdownify
+$ git clone https://github.com/Poleexpr/memeGenerator.git
 
 # Install dependencies
 $ npm install
